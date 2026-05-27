@@ -1,5 +1,5 @@
 AESD_ASSIGNMENTS_VERSION = main
-AESD_ASSIGNMENTS_SITE = https://github.com/Chris-lab-lab/assignment3-Chris-lab-lab.git
+AESD_ASSIGNMENTS_SITE = git@github.com:Chris-lab-lab/assignment3-Chris-lab-lab.git
 AESD_ASSIGNMENTS_SITE_METHOD = git
 AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
 define AESD_ASSIGNMENTS_BUILD_CMDS
