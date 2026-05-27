@@ -5,3 +5,4 @@
 	path = buildroot
 	url = https://gitlab.com/buildroot.org/buildroot.git
 	shallow = true
+	branch = 2024.02.x
