@@ -12,6 +12,8 @@ jobs:
         timeout-minutes: 360
         steps:
           - uses: actions/checkout@v2
+            with:
+                clean: false
           - name: Checkout submodules
             run: git submodule update --init --recursive
           - uses: webfactory/ssh-agent@v0.5.3
@@ -20,6 +22,7 @@ jobs:
           - name: Run full test
             env:
               GIT_SSH_COMMAND: "ssh -o StrictHostKeyChecking=no"
+              FORCE_UNSAFE_CONFIGURE: 1
             run: ./full-test.sh
           - name: Cleanup
             if: always()
